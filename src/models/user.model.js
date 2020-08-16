@@ -30,4 +30,4 @@ let UserSchema = new Schema({
     deletedAt: { type: Number, default: null }
 });
 
-model.exports = mongoose.model("user", UserSchema);
+module.exports = mongoose.model("user", UserSchema);

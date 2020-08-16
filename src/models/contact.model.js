@@ -11,4 +11,20 @@ let ContactSchema = new Schema({
     deletedAt: { type: Number, default: null }
 });
 
-model.exports = mongoose.model("contact", ContactSchema);
+ContactSchema.statics = {
+    getAll() {
+        return this.find();
+    },
+    delete(condition) {
+        return this.deleteOne(condition, (err) => {
+            if (err)
+                console.log(err);
+        });
+    },
+    createNew(contact) {
+        return this.create(contact);
+    }
+
+};
+
+module.exports = mongoose.model("contact", ContactSchema);

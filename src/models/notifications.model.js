@@ -19,4 +19,4 @@ let ChatGroupSchema = new Schema({
     createdAt: { type: Number, default: Date.now },
 });
 
-model.exports = mongoose.model("chat-group", ChatGroupSchema);
+module.exports = mongoose.model("chat-group", ChatGroupSchema);

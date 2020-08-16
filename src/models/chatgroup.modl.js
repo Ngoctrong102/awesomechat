@@ -13,4 +13,4 @@ let ChatGroupSchema = new Schema({
     deletedAt: { type: Number, default: null }
 });
 
-model.exports = mongoose.model("chatgroup", ChatGroupSchema);
+module.exports = mongoose.model("chatgroup", ChatGroupSchema);
