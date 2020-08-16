@@ -1,0 +1,21 @@
+{
+  "name": "awesomechat",
+  "description": "app chat realtime",
+  "main": "app.js",
+  "authors": [
+    "ngoctrong102"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/public/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bower_components": "https://github.com/trungquan17/awesome-chat-third-party-libraries.git"
+  }
+}
