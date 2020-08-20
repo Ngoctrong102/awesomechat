@@ -1,6 +1,6 @@
 let chatController = {
     index: (req, res) => {
-        res.render('main/master');
+        res.render('main/home/home');
     }
 };
 
